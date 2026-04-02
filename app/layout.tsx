@@ -1,21 +1,22 @@
-import { ReactNode } from 'react';
-import Head from 'next/head';
+import { ReactNode } from "react";
+import type { Metadata } from "next";
+import Sidebar from "@/components/Sidebar";
+import "./globals.css";
 
-interface Props {
-  children: ReactNode;
-}
-
-const Layout: React.FC<Props> = ({ children }) => {
-  return (
-    <>
-      <Head>
-        <title>Dashboard Layout</title>
-      </Head>
-      <div className="layout">
-        {children}
-      </div>
-    </>
-  );
+export const metadata: Metadata = {
+  title: "eCommerce Dashboard",
+  description: "Admin dashboard for ecommerce management",
 };
 
-export default Layout;
+export default function RootLayout({ children }: { children: ReactNode }) {
+  return (
+    <html lang="en">
+      <body>
+        <Sidebar />
+        <main className="ml-64 min-h-screen p-8">
+          {children}
+        </main>
+      </body>
+    </html>
+  );
+}
