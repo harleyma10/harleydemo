@@ -1,21 +1,22 @@
-import { ReactNode } from 'react';
-import Head from 'next/head';
+import type { Metadata } from "next";
+import "./globals.css";
 
-interface Props {
-  children: ReactNode;
-}
-
-const Layout: React.FC<Props> = ({ children }) => {
-  return (
-    <>
-      <Head>
-        <title>Dashboard Layout</title>
-      </Head>
-      <div className="layout">
-        {children}
-      </div>
-    </>
-  );
+export const metadata: Metadata = {
+  title: "Harley Demo — E-commerce Dashboard",
+  description:
+    "The all-in-one e-commerce dashboard to manage orders, products, and analytics.",
 };
 
-export default Layout;
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body className="antialiased">
+        {children}
+      </body>
+    </html>
+  );
+}
