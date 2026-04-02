@@ -1,21 +1,17 @@
-import { ReactNode } from 'react';
-import Head from 'next/head';
+import { ReactNode } from "react";
+import AuthProvider from "@/components/AuthProvider";
 
-interface Props {
-  children: ReactNode;
-}
-
-const Layout: React.FC<Props> = ({ children }) => {
-  return (
-    <>
-      <Head>
-        <title>Dashboard Layout</title>
-      </Head>
-      <div className="layout">
-        {children}
-      </div>
-    </>
-  );
+export const metadata = {
+  title: "E-commerce Dashboard",
+  description: "Customer login and dashboard",
 };
 
-export default Layout;
+export default function RootLayout({ children }: { children: ReactNode }) {
+  return (
+    <html lang="en">
+      <body>
+        <AuthProvider>{children}</AuthProvider>
+      </body>
+    </html>
+  );
+}
