@@ -33,6 +33,38 @@ const designs = [
     path: "/login/design4",
     colors: ["#0a0a0a", "#10b981"],
   },
+  {
+    id: 5,
+    name: "Warm Testimonial",
+    description:
+      "A split layout with the form on the left and an orange-gradient right panel featuring a customer testimonial quote.",
+    path: "/login/design5",
+    colors: ["#ff6b35", "#f7931e"],
+  },
+  {
+    id: 6,
+    name: "Soft Rounded",
+    description:
+      "A clean card with a user avatar icon, icon-adorned inputs with a show/hide password toggle, and soft rounded corners throughout.",
+    path: "/login/design6",
+    colors: ["#667eea", "#764ba2"],
+  },
+  {
+    id: 7,
+    name: "Warm Card",
+    description:
+      "A peach gradient background with a white rounded card containing a branded left panel and form on the right, with a carousel indicator.",
+    path: "/login/design7",
+    colors: ["#e44d26", "#fca326"],
+  },
+  {
+    id: 8,
+    name: "Neon Cyber",
+    description:
+      "A deep navy background with geometric circle outlines, a pink-to-cyan gradient accent, and a gradient text signup link.",
+    path: "/login/design8",
+    colors: ["#1a1a2e", "#e64980"],
+  },
 ];
 
 const LoginIndex = () => {
@@ -66,7 +98,7 @@ const LoginIndex = () => {
             marginBottom: "48px",
           }}
         >
-          Choose from 4 different login page designs for your e-commerce
+          Choose from 8 different login page designs for your e-commerce
           dashboard
         </p>
 
