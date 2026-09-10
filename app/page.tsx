@@ -1,4 +1,5 @@
 import Image from "next/image";
+import FAQ from "@/components/FAQ";
 
 /* ───── tiny inline SVG icons (no external deps) ───── */
 function IconChart() {
@@ -198,6 +199,9 @@ export default function LandingPage() {
             </a>
             <a href="#testimonials" className="text-sm font-medium text-gray-600 hover:text-gray-900">
               Testimonials
+            </a>
+            <a href="#faq" className="text-sm font-medium text-gray-600 hover:text-gray-900">
+              FAQ
             </a>
           </nav>
           <div className="flex items-center gap-3">
@@ -441,6 +445,9 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+
+      {/* ────── FAQ ────── */}
+      <FAQ />
 
       {/* ────── CTA ────── */}
       <section id="cta" className="bg-indigo-600">
