@@ -48,3 +48,5 @@ If you would like to contribute to this project, please fork the repo and submit
 
 ## License
 This project is licensed under the MIT License.
+
+![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/harleyma10/harleydemo?utm_source=oss&utm_medium=github&utm_campaign=harleyma10%2Fharleydemo&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
