@@ -1,1 +1,25 @@
-{\n  "name": "harleydemo",\n  "version": "1.0.0",\n  "private": true,\n  "dependencies": {\n    "next": "latest",\n    "react": "latest",\n    "react-dom": "latest",\n    "@next-auth/react": "latest",\n    "@next-auth/prisma-adapter": "latest",\n    "@prisma/client": "latest",\n    "@stripe/react-stripe-js": "latest",\n    "@stripe/stripe-js": "latest",\n    "prisma": "latest",\n    "axios": "latest",\n    "dotenv": "latest"\n  }\n}
+{
+  "name": "harleydemo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4",
+    "@tailwindcss/postcss": "^4",
+    "postcss": "^8",
+    "typescript": "^5",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/node": "^22"
+  }
+}
